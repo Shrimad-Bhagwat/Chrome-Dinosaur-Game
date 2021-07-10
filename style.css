@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 50px solid black;
+    /* margin: 20px; */
+    z-index: 5;
+}
+
+#game-over{
+    width: 100%;
+    display: none;
+    
+}
+
+#character{
+    width: 20px;
+    height: 50px;
+    /* background: url(./dino.png); */
+    position: relative;
+    top: 150px;
+    /* left: 50px; */
+}
+#character img{
+    height: 50px;
+}
+.animate{
+    animation: jump 800ms ;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    50%{top: 110px;}
+    70%{top: 130px;}
+    90%{top: 140px;}
+    /* 100%{top: 150px;} */
+}
+#block{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 120px;
+    left: 480px;
+    /* background-color: blue; */
+    animation: move 2s infinite linear;
+    z-index: -3;
+}
+
+#block img{
+    height: 30px;
+}
+
+@keyframes move {      
+    0%{left: 500px;}
+    100%{left: -40px;}
+    
+}
