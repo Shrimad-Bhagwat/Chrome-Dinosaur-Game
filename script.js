@@ -27,14 +27,15 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         character.style.display = "none";
         // alert("You Lose !!!");
+        alert('Your Score : ' + score/20);
     }
     else if(blockLeft<0){
         score +=1;
-        if(score%15 == 0){
+        //if(score%15 == 0){
             // console.log(score/15);
             // myScore.text="SCORE: " + myGameArea.frameNo;
             // myScore.update();
-        }
+        //}
     }
 },10);
 
