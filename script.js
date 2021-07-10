@@ -27,7 +27,7 @@ var checkDead = setInterval(function(){
         block.style.display = "none";
         character.style.display = "none";
         // alert("You Lose !!!");
-        alert('Your Score : ' + score/20);
+        alert('Your Score : ' + parseInt(score/20));
     }
     else if(blockLeft<0){
         score +=1;
